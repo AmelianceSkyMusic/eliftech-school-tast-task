@@ -14,12 +14,6 @@ import './globals.css';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-	title: `${APP.name}`,
-	description: 'description',
-	icons: { icon: '/favicon.svg' },
-};
-
 interface RootLayoutProps {
 	children: React.ReactNode;
 }
