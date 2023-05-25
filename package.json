@@ -17,7 +17,8 @@
     "lodash.merge": "^4.6.2",
     "next": "13.4.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-material-symbols": "^4.1.1"
   },
   "devDependencies": {
     "@types/lodash.merge": "^4.6.7",
