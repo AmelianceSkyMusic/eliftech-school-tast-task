@@ -1,4 +1,4 @@
-# eliftech-school-tast-task
+# eliftech-school-test-task
 The Food Delivery app. Selective test task for admission to ElifTech School
 
 ---
@@ -6,7 +6,7 @@ The Food Delivery app. Selective test task for admission to ElifTech School
 
 1. clone the repository:
 ```bash
-git clone https://github.com/AmelianceSkyMusic/eliftech-school-tast-task.git
+git clone https://github.com/AmelianceSkyMusic/eliftech-school-test-task.git
 ```
 
 2. Install modules:
