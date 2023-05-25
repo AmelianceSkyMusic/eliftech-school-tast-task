@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import { APP } from '~constants/APP';
 
 export const metadata: Metadata = {
-	title: `Shop | ${APP.name}`,
+	title: `Shopping Cart | ${APP.name}`,
 };
 
-export default async function Home() {
-	return <h1>Shop</h1>;
+export default function Home() {
+	return <h1>Shopping Cart</h1>;
 }
