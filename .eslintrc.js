@@ -7,7 +7,8 @@ module.exports = {
 		'eslint:recommended',
 		'plugin:react/recommended',
 		'plugin:@typescript-eslint/recommended',
-		'next/core-web-vitals'
+		'plugin:react/jsx-runtime',
+		'next/core-web-vitals',
 	],
 	'overrides': [
 	],
@@ -18,24 +19,28 @@ module.exports = {
 	},
 	'plugins': [
 		'react',
-		'@typescript-eslint'
+		'@typescript-eslint',
+		'simple-import-sort',
 	],
 	'rules': {
-		'indent': [
-			'error',
-			'tab'
-		],
-		'linebreak-style': [
-			'error',
-			'unix'
-		],
-		'quotes': [
-			'error',
-			'single'
-		],
-		'semi': [
-			'error',
-			'always'
-		]
+		'indent': ['error', 'tab'],
+		'linebreak-style': ['error', 'unix'],
+		'quotes': ['error', 'single'],
+		'semi': ['error', 'always'],
+		'simple-import-sort/imports': ['error', {
+			groups: [
+				['^react'],
+				['^antd'],
+				['^@?\\w'],
+				['@/(.*)'],
+				['^~'],
+				['^~/ameliance-ui'],
+				['^[./]'],
+				['^~assets'],
+				['@.+.(sc|sa|c)ss$'],
+				['.(sc|sa|c)ss$'],
+				['.module.(sc|sa|c)ss$'],
+			],
+		}],
 	}
 };
