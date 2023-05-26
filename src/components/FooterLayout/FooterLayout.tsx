@@ -11,7 +11,7 @@ const useStyles = createStyles(() => ({
 export function FooterLayout() {
 	const { classes: c } = useStyles();
 	return (
-		<Footer className={c.footer} height="60" p="md">
+		<Footer className={c.footer} height="30" p="md">
 			<Text
 				fz="xs"
 				component="a"
