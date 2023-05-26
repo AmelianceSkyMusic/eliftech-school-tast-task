@@ -1,0 +1,42 @@
+export const allTheBest = [
+	{
+		id: 1,
+		title: 'Wheat groats',
+		price: 11,
+		description: 'Groats 1 kg Smart choice wheat from soft wheat varieties',
+		image: 'https://src.zakaz.atbmarket.com/cache/photos/26599/catalog_product_gal_26599.jpg',
+		available: 1,
+	},
+	{
+		id: 2,
+		title: 'Rice',
+		price: 48,
+		description: 'Cereal 0.85 kg Krupyany dvor Rice polished round grain',
+		image: 'https://src.zakaz.atbmarket.com/cache/photos/18525/catalog_product_gal_18525.jpg',
+		available: 0,
+	},
+	{
+		id: 3,
+		title: 'Buckwheat',
+		price: 44,
+		description: 'Cereal 1 kg Smart choice buckwheat',
+		image: 'https://src.zakaz.atbmarket.com/cache/photos/173/catalog_product_gal_173.jpg',
+		available: 1,
+	},
+	{
+		id: 4,
+		title: 'Manna',
+		price: 16,
+		description: 'Semolina 1 kg Smart choice Manna',
+		image: 'https://src.zakaz.atbmarket.com/cache/photos/345/catalog_product_gal_345.jpg',
+		available: 1,
+	},
+	{
+		id: 5,
+		title: 'Barley Groats',
+		price: 12,
+		description: 'Cereal 1 kg Smart Choice Barley',
+		image: 'https://src.zakaz.atbmarket.com/cache/photos/295/catalog_product_gal_295.jpg',
+		available: 1,
+	},
+];
