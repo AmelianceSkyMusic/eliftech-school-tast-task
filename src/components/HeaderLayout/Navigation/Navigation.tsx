@@ -39,6 +39,13 @@ export function Navigation() {
 				href={ROUTES.cart}
 				active={currentPathName === ROUTES.cart}
 			/>
+			<NavLink
+				className={c.link}
+				label={`History`}
+				component={Link}
+				href={ROUTES.history}
+				active={currentPathName === ROUTES.history}
+			/>
 		</Box>
 	);
 }
