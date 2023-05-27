@@ -1,6 +1,8 @@
 export interface ShopItem {
-	codeName: string;
+	id: string;
 	name: string;
 	description: string;
 	address: string;
 }
+
+export type ShopItems = Record<string, ShopItem>;
