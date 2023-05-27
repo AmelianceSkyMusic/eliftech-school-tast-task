@@ -41,10 +41,8 @@ next-env.d.ts
 _legacy*
 _backup*
 _temp*
-_lab*
 
 # temp files
 *._legacy*
 *._backup*
 *._temp*
-*._lab*

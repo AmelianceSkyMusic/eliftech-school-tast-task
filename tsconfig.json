@@ -26,7 +26,6 @@
 		"*/**/_backup*",
 		"*/**/_legacy*",
 		"*/**/_temp*",
-		"*/**/_lab*"
 	],
 	"extends": "./tsconfig.paths.json"
 }
