@@ -3,12 +3,6 @@ import type { Metadata } from 'next';
 
 import { APP } from '~constants/APP';
 
-export const metadata: Metadata = {
-	title: `Shopping Cart | ${APP.name}`,
-	description: 'the shopping cart page',
-	icons: { icon: '/favicon.svg' },
-};
-
 import { AppShell, Title } from '@mantine/core';
 
 import { FooterLayout } from '~components/FooterLayout/FooterLayout';

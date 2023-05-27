@@ -7,8 +7,8 @@ interface RootLayoutProps {
 }
 
 export const metadata: Metadata = {
-	title: `Shop | ${APP.name}`,
-	description: 'the shops page',
+	title: `Shopping Cart | ${APP.name}`,
+	description: 'the shopping cart page',
 	icons: { icon: '/favicon.svg' },
 };
 
