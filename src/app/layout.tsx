@@ -1,11 +1,7 @@
-'use client';
-
-import { AppShell } from '@mantine/core';
+import { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 
-import { FooterLayout } from '~components/FooterLayout/FooterLayout';
-import { HeaderLayout } from '~components/HeaderLayout/HeaderLayout';
-import { StylesProvider } from '~components/StylesProvider/StylesProvider';
+import { APP } from '~constants/APP';
 
 import 'react-material-symbols/dist/rounded.css';
 import './globals.css';
@@ -16,16 +12,16 @@ interface RootLayoutProps {
 	children: React.ReactNode;
 }
 
+export const metadata: Metadata = {
+	title: `Shop | ${APP.name}`,
+	description: 'the shops page',
+	icons: { icon: '/favicon.svg' },
+};
+
 export default function RootLayout({ children }: RootLayoutProps) {
 	return (
 		<html lang="en">
-			<body className={montserrat.className}>
-				<StylesProvider>
-					<AppShell footer={<FooterLayout />} header={<HeaderLayout />}>
-						<main>{children}</main>
-					</AppShell>
-				</StylesProvider>
-			</body>
+			<body className={montserrat.className}>{children}</body>
 		</html>
 	);
 }
