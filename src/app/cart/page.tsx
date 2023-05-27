@@ -1,13 +1,11 @@
 'use client';
-import type { Metadata } from 'next';
-
-import { APP } from '~constants/APP';
 
 import { AppShell, Title } from '@mantine/core';
 
 import { FooterLayout } from '~components/FooterLayout/FooterLayout';
 import { HeaderLayout } from '~components/HeaderLayout/HeaderLayout';
 import { StylesProvider } from '~components/StylesProvider/StylesProvider';
+import { CartForm } from './CartForm';
 
 export default function Home() {
 	return (
@@ -17,6 +15,7 @@ export default function Home() {
 					<Title order={3} pb="lg">
 						Shopping Cart
 					</Title>
+					<CartForm />
 				</main>
 			</AppShell>
 		</StylesProvider>
