@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { getAllProducts } from '~app/(server)/api/products/data';
-import { returnError } from '~app/helpers/returnError';
+import { returnError } from '~helpers/returnError';
 import { ProductItem } from '~types/Product';
 
 interface UseShopProductsState {

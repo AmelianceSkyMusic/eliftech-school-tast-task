@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { getAllShops, getShop } from '~app/(server)/api/shops/data';
-import { returnError } from '~app/helpers/returnError';
+import { returnError } from '~helpers/returnError';
 import { ShopItem, ShopItems } from '~types/Shop';
 
 interface UseShopsState {
