@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { ROUTES } from '~constants/ROUTES';
+import { useUserCartState } from '~store/useUserCartState';
 
 const useStyles = createStyles(() => ({
 	container: {
@@ -20,6 +21,7 @@ const useStyles = createStyles(() => ({
 export function Navigation() {
 	const { classes: c } = useStyles();
 	const currentPathName = usePathname();
+	const userCart = useUserCartState((state) => state.userCart);
 
 	return (
 		<Box component="nav" className={c.container}>
@@ -32,7 +34,7 @@ export function Navigation() {
 			/>
 			<NavLink
 				className={c.link}
-				label="Shopping Cart"
+				label={`Cart (${userCart.length})`}
 				component={Link}
 				href={ROUTES.cart}
 				active={currentPathName === ROUTES.cart}
