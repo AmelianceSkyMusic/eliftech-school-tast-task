@@ -1,6 +1,6 @@
 export const allTheBest = [
 	{
-		id: 1,
+		id: 'allTheBest-1',
 		title: 'Wheat groats',
 		price: 11,
 		description: 'Groats 1 kg Smart choice wheat from soft wheat varieties',
@@ -8,7 +8,7 @@ export const allTheBest = [
 		available: 1,
 	},
 	{
-		id: 2,
+		id: 'allTheBest-2',
 		title: 'Rice',
 		price: 48,
 		description: 'Cereal 0.85 kg Krupyany dvor Rice polished round grain',
@@ -16,7 +16,7 @@ export const allTheBest = [
 		available: 0,
 	},
 	{
-		id: 3,
+		id: 'allTheBest-3',
 		title: 'Buckwheat',
 		price: 44,
 		description: 'Cereal 1 kg Smart choice buckwheat',
@@ -24,7 +24,7 @@ export const allTheBest = [
 		available: 1,
 	},
 	{
-		id: 4,
+		id: 'allTheBest-4',
 		title: 'Manna',
 		price: 16,
 		description: 'Semolina 1 kg Smart choice Manna',
@@ -32,7 +32,7 @@ export const allTheBest = [
 		available: 1,
 	},
 	{
-		id: 5,
+		id: 'allTheBest-5',
 		title: 'Barley Groats',
 		price: 12,
 		description: 'Cereal 1 kg Smart Choice Barley',

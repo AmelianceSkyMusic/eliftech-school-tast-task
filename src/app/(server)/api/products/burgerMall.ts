@@ -1,6 +1,6 @@
 export const burgerMall = [
 	{
-		id: 1,
+		id: 'burgerMall-1',
 		title: 'Hamburger',
 		price: 78,
 		description:
@@ -9,7 +9,7 @@ export const burgerMall = [
 		available: 1,
 	},
 	{
-		id: 2,
+		id: 'burgerMall-2',
 		title: 'Cheeseburger',
 		price: 45,
 		description:
@@ -18,7 +18,7 @@ export const burgerMall = [
 		available: 1,
 	},
 	{
-		id: 3,
+		id: 'burgerMall-3',
 		title: 'Double Cheeseburger',
 		price: 47,
 		description:
@@ -27,7 +27,7 @@ export const burgerMall = [
 		available: 1,
 	},
 	{
-		id: 4,
+		id: 'burgerMall-4',
 		title: 'McCheeken',
 		price: 59,
 		description:
@@ -36,7 +36,7 @@ export const burgerMall = [
 		available: 1,
 	},
 	{
-		id: 5,
+		id: 'burgerMall-5',
 		title: 'Big Mac',
 		price: 24,
 		description:
@@ -45,7 +45,7 @@ export const burgerMall = [
 		available: 0,
 	},
 	{
-		id: 6,
+		id: 'burgerMall-6',
 		title: 'Big Tasty',
 		price: 96,
 		description:
@@ -54,7 +54,7 @@ export const burgerMall = [
 		available: 1,
 	},
 	{
-		id: 7,
+		id: 'burgerMall-7',
 		title: 'Royal Cheeseburger',
 		price: 54,
 		description:
@@ -63,7 +63,7 @@ export const burgerMall = [
 		available: 1,
 	},
 	{
-		id: 8,
+		id: 'burgerMall-8',
 		title: 'Chicken Junior',
 		price: 24,
 		description:
@@ -72,7 +72,7 @@ export const burgerMall = [
 		available: 1,
 	},
 	{
-		id: 9,
+		id: 'burgerMall-9',
 		title: 'Royal Fresh',
 		price: 55,
 		description:
@@ -81,7 +81,7 @@ export const burgerMall = [
 		available: 1,
 	},
 	{
-		id: 10,
+		id: 'burgerMall-10',
 		title: 'Bacon cheeseburger',
 		price: 47,
 		description:

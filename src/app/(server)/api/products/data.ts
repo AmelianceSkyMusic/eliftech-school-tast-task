@@ -1,18 +1,18 @@
-import { ProductItem } from '~types/ProductItem';
+import { ProductItem, ProductItems } from '~types/Product';
 
 import { allTheBest } from './allTheBest';
 import { burgerMall } from './burgerMall';
 import { manyFoodsStore } from './manyFoodsStore';
 import { potatoesBox } from './potatoesBox';
 
-export const SHOP_PRODUCTS: Record<string, ProductItem[]> = {
+export const SHOP_PRODUCTS: ProductItems = {
 	burgerMall,
 	allTheBest,
 	manyFoodsStore,
 	potatoesBox,
 };
 
-export async function getAllProducts(): Promise<Record<string, ProductItem[]>> {
+export async function getAllProducts(): Promise<ProductItems> {
 	return await new Promise((resolve, reject) => {
 		try {
 			resolve(SHOP_PRODUCTS);

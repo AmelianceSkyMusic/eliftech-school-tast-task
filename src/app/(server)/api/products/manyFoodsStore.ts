@@ -1,6 +1,6 @@
 export const manyFoodsStore = [
 	{
-		id: 1,
+		id: 'burgerMall-1',
 		title: 'Bananas',
 		price: 48,
 		description: 'Delicious and yellow',
@@ -8,7 +8,7 @@ export const manyFoodsStore = [
 		available: 1,
 	},
 	{
-		id: 2,
+		id: 'burgerMall-2',
 		title: 'Potatoes',
 		price: 15,
 		description: 'Real Ukrainian without parsley',
@@ -16,7 +16,7 @@ export const manyFoodsStore = [
 		available: 1,
 	},
 	{
-		id: 3,
+		id: 'burgerMall-3',
 		title: 'Cabbage',
 		price: 88,
 		description: 'Lots of green leaves',
@@ -24,7 +24,7 @@ export const manyFoodsStore = [
 		available: 1,
 	},
 	{
-		id: 4,
+		id: 'burgerMall-4',
 		title: 'Cucumbers',
 		price: 89,
 		description: 'The little green ones',
@@ -32,7 +32,7 @@ export const manyFoodsStore = [
 		available: 1,
 	},
 	{
-		id: 5,
+		id: 'burgerMall-5',
 		title: 'Orange',
 		price: 19,
 		description: 'The juicy fruit of the wild',
@@ -40,7 +40,7 @@ export const manyFoodsStore = [
 		available: 1,
 	},
 	{
-		id: 6,
+		id: 'burgerMall-6',
 		title: 'Tomatoes',
 		price: 88,
 		description: 'Better cheap tomatoes than expensive watermelons',
@@ -48,7 +48,7 @@ export const manyFoodsStore = [
 		available: 0,
 	},
 	{
-		id: 7,
+		id: 'burgerMall-7',
 		title: 'Washed Beets',
 		price: 64,
 		description:
@@ -57,7 +57,7 @@ export const manyFoodsStore = [
 		available: 0,
 	},
 	{
-		id: 8,
+		id: 'burgerMall-8',
 		title: 'Dill fresh bunch',
 		price: 40,
 		description: "What's already there",
@@ -65,7 +65,7 @@ export const manyFoodsStore = [
 		available: 1,
 	},
 	{
-		id: 9,
+		id: 'burgerMall-9',
 		title: 'Imported eggplant',
 		price: 49,
 		description: 'Beautiful eggplant, for your mom',

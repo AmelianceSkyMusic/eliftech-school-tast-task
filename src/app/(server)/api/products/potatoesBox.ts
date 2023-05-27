@@ -1,6 +1,6 @@
 export const potatoesBox = [
 	{
-		id: 1,
+		id: 'potatoesBox-1',
 		title: 'Large French Fries',
 		price: 120,
 		description:
@@ -9,7 +9,7 @@ export const potatoesBox = [
 		available: 1,
 	},
 	{
-		id: 2,
+		id: 'potatoesBox-2',
 		title: 'Medium French Fries',
 		price: 80,
 		description:
@@ -18,7 +18,7 @@ export const potatoesBox = [
 		available: 1,
 	},
 	{
-		id: 3,
+		id: 'potatoesBox-3',
 		title: 'Small French Fries',
 		price: 60,
 		description: 'Selected potatoes fried in natural oil and slightly salted',
