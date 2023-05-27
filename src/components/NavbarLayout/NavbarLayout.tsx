@@ -1,4 +1,4 @@
-import { Navbar } from '@mantine/core';
+import { Navbar, Text } from '@mantine/core';
 
 import { NavbarLink } from './NavbarLink';
 import { useShopsState } from '~store/useShopsState';
@@ -19,6 +19,7 @@ export function NavbarLayout() {
 
 	return (
 		<Navbar width={{ base: 180 }} height={'auto'} p="xs">
+			<Text mt="md">Shops:</Text>
 			<Navbar.Section grow mt="md">
 				{allShopIds &&
 					allShops &&
