@@ -1,17 +1,59 @@
-import React from 'react';
+'use client';
+import { useEffect } from 'react';
 
-import type { Metadata } from 'next';
+import { AppShell, Title } from '@mantine/core';
 
-import { APP_NAME } from '~constants/APP_NAME';
+import { FooterLayout } from '~components/FooterLayout/FooterLayout';
+import { HeaderLayout } from '~components/HeaderLayout/HeaderLayout';
+import { NavbarLayout } from '~components/NavbarLayout/NavbarLayout';
+import { StylesProvider } from '~components/StylesProvider/StylesProvider';
 
-export const metadata: Metadata = {
-	title: `PageName | ${APP_NAME}`,
-};
+import { ProductCardsGrid } from './ProductCardsGrid';
+import { useShopsState } from '~store/useShopsState';
+import Loading from './loading';
+import { shallow } from 'zustand/shallow';
+import { useShopProductsState } from '~store/useShopProductsState';
 
 export default function Home() {
+	const { allShops, currentShopId, loadingShops, getAllShops } = useShopsState(
+		(state) => ({
+			allShops: state.allShops,
+			currentShopId: state.currentShopId,
+			loadingShops: state.loading,
+			getAllShops: state.getAllShops,
+		}),
+		shallow
+	);
+
+	const { getAllProducts, loadingProducts } = useShopProductsState(
+		(state) => ({
+			getAllProducts: state.getAllProducts,
+			loadingProducts: state.loading,
+		}),
+		shallow
+	);
+
+	useEffect(() => {
+		getAllShops();
+		getAllProducts();
+	}, []);
+
+	if (loadingShops && loadingProducts) return <Loading />;
+
 	return (
-		<main>
-			<h1>PageName</h1>
-		</main>
+		<StylesProvider>
+			<AppShell
+				header={<HeaderLayout />}
+				footer={<FooterLayout />}
+				navbar={<NavbarLayout />}
+			>
+				<main>
+					<Title order={3} pb="lg">
+						{(allShops && allShops[currentShopId].name) || ''}
+					</Title>
+					<ProductCardsGrid />
+				</main>
+			</AppShell>
+		</StylesProvider>
 	);
 }

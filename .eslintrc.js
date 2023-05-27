@@ -9,6 +9,7 @@ module.exports = {
 		'plugin:@typescript-eslint/recommended',
 		'plugin:react/jsx-runtime',
 		'next/core-web-vitals',
+		'plugin:prettier/recommended',
 	],
 	'overrides': [
 	],
@@ -25,7 +26,7 @@ module.exports = {
 	'rules': {
 		'indent': ['error', 'tab'],
 		'linebreak-style': ['error', 'unix'],
-		'quotes': ['error', 'single'],
+		'quotes': ['error', 'single', { avoidEscape: true }],
 		'semi': ['error', 'always'],
 		'simple-import-sort/imports': ['error', {
 			groups: [
