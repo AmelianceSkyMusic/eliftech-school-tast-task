@@ -1,4 +1,5 @@
 'use client';
+
 import { useEffect } from 'react';
 
 import { AppShell, Title } from '@mantine/core';
@@ -34,8 +35,8 @@ export default function Home() {
 	);
 
 	useEffect(() => {
-		getAllShops();
 		getAllProducts();
+		if (!allShops) getAllShops();
 	}, []);
 
 	if (loadingShops && loadingProducts) return <Loading />;

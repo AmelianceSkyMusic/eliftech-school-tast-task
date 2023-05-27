@@ -42,6 +42,7 @@ const useStyles = createStyles((theme, { active }: CreateStylesProps) => ({
 		'&:disabled': {
 			opacity: '30%',
 			pointerEvents: 'none',
+			userSelect: 'none',
 		},
 		cursor: active ? 'auto' : 'pointer',
 	},

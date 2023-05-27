@@ -1,4 +1,5 @@
 'use client';
+
 import { SimpleGrid } from '@mantine/core';
 
 import { shallow } from 'zustand/shallow';
@@ -43,7 +44,7 @@ export function ProductCardsGrid() {
 		>
 			{allShopProducts &&
 				currentShopId &&
-				allShopProducts[shopIdFromCart || currentShopId].map(
+				allShopProducts[shopIdFromCart || currentShopId]?.map(
 					(productItem) => (
 						<ProductCard key={productItem.id} productItem={productItem} />
 					)
